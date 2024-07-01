@@ -10,9 +10,10 @@
 
 .container {
   background: rgb(31, 31, 31);
-  width: 30vw;
-  height: 70vh;
+  max-width: 30vw;
+  height: auto;
   display: flex;
+  flex-direction: column;
   padding: 1rem;
 }
 
@@ -24,4 +25,56 @@
 .avatar img {
   border-radius: 50%;
   width: 5rem;
+}
+
+.details {
+  padding: 0.5rem 0;
+}
+
+.details h2{
+  color: white;
+  margin: 0;
+  padding: inherit;
+}
+
+#address {
+  color: rgb(80, 143, 14);
+  font-size: 0.8rem;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+#role {
+  margin: 0;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.profiles {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.profile {
+  width: 100%;
+  height: 2rem;
+  background: rgb(51, 51, 51);
+  border-radius: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile:hover {
+  background: rgb(159, 255, 40);
+  
+}
+
+.profile a{
+  color: white !important;
+  font-family: 'Inter-B';
+  text-decoration: none;
+  width: 100%;
 }
