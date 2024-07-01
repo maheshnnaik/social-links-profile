@@ -1,3 +1,27 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(20, 20, 20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: rgb(31, 31, 31);
+  width: 30vw;
+  height: 70vh;
+  display: flex;
+  padding: 1rem;
+}
+
+.avatar {
+  width: 100%;
+  height: fit-content;
+}
+
+.avatar img {
+  border-radius: 50%;
+  width: 5rem;
 }
