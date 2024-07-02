@@ -1,4 +1,4 @@
-import { allProfiles } from "./constants"
+import { ADDRESS, allProfiles, NAME, ROLE } from "./constants"
 import { Profile } from "./Profile"
 
 export const SocialProfile = () => {
@@ -8,10 +8,10 @@ export const SocialProfile = () => {
 				<img src="./images/avatar.jpeg" alt="Profile" />
 			</div>
 			<div className="details">
-				<h2 id="name">Jessica Randall</h2>
-				<p id="address">London, United Kingdom</p>
+				<h2 id="name">{NAME}</h2>
+				<p id="address">{ADDRESS}</p>
 			</div>
-			<p id="role">"Front-end developer at avid reader"</p>
+			<p id="role">{ROLE}</p>
 			<div className="profiles">
 				{
 					allProfiles.map((profile, index) => {

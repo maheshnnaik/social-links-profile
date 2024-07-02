@@ -1,3 +1,9 @@
+export const NAME = "Mahesh Naik";
+
+export const ADDRESS = "Karnataka, India";
+
+export const ROLE = "Front-end developer";
+
 export const allProfiles = [
 	{
 		name: "Github",
